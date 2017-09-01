@@ -1,0 +1,6 @@
+﻿#engl {position: absolute;top : 65;}
+#rus {position: absolute;top: 65;}
+#menu{top: 100; text-align :center; }
+#def{position: absolute;top:7;right:7;}
+.hide { visibility:collapse ;  font-family: Calibri; color: gold; }
+.show { visibility:visible ; font-family: Calibri; color: gold;}

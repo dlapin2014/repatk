@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+
+</script>
+<title>
+Письмо
+</title>
+</head>
+<body background="Images/fon2.jpg">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+<div id="rus" class="show" style="font-size: 1.4em;">
+<img src="Images/en.jpg"  align="left" width="43" height="41"  vspace="7"  onclick="get()">
+<p align="center">
+<font color="gold" face="Calibri" style = "font-size: 4em">
+Здравствуйте!
+</font>
+</p>
+<div align="center">
+<p>
+<font color="gold" face="Calibri" style ="font-size: 2em">
+Этот раздел сайта создан специально для связи с разработчиками.
+<br>
+Здесь вы можете отправить нам письмо.
+</font>
+</p>
+</div>
+<div align="center">
+<form action="datan.php"   method="post" >
+<font face="Calibri" color="gold" style="font-size: 1.7em;">Логин</font>
+<br>
+<input name="login">
+<br>
+<font face="Calibri" color="gold" style="font-size: 1.7em;">Пароль</font>
+<br>
+<input type="password" name="pass">
+<br>
+<br>
+<a href="Chat/reg.html"><font color="gold" style="font-size: 1em;">Регистрация</font></a>
+<br>
+<br>
+<textarea rows="30" cols="100" name="field1">Отправить письмо</textarea>
+<input type="submit" name="submit" value="SEND">
+</div>
+</form>
+</div>
+<div  id="engl" class="hide" style="font-size: 1.4em;" >
+<img src="Images/rus.jpg"  align="left" width="43" height="41"  vspace="7"  onclick="get1()">
+<p align="center">
+<font face="Calibri" color="gold" style = "font-size: 4em">
+Hello!
+</font>
+</p>
+<div align="center">
+<p>
+<font face="Calibri" color="gold" style ="font-size: 2em">
+This section of the site was created specifically for communication with developers.
+<br>
+Here you can send us an email.
+</font>
+</p>
+</div>
+<div align="center">
+<form action="datan.php"   method="post"  >
+<font face="Calibri" color="gold" style="font-size: 1.7em;" >Login</font>
+<br>
+<input name="login">
+<br>
+<font face="Calibri" color="gold" style="font-size: 1.7em;" >Password</font>
+<br>
+<input type="password" name="pass">
+<br>
+<br>
+<a href="Chat/reg.html"><font color="gold" style="font-size: 1em;">Registration</font></a>
+<br>
+<br>
+<textarea rows="30" cols="100" name="field1">Send email</textarea>
+<input type="submit" name="submit" value="SEND">
+</div>
+</form>
+</div>
+</body>
+</html>

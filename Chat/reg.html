@@ -1,0 +1,91 @@
+﻿<html>
+<head>
+<title>Регистрация</title>
+<script>
+function get(){
+document.getElementById('rus').className='hide';
+document.getElementById('engl').className='show';
+document.getElementById('ruim').className='show';
+}
+function get1(){
+document.getElementById('engl').className='hide';
+document.getElementById('rus').className='show';
+document.getElementById('ruim').className='hide';
+}
+</script>
+<style type="text/css">
+#engl {position: relative;top : -185;}
+#rus {position: relative;}
+#enim {position: absolute;top : 5;right : 5;}
+#ruim {position: absolute;top : 5;right : 5;}
+#child {
+position: relative;
+	top: 350;
+	
+}
+.hide { visibility:collapse }
+.show { visibility:visible }
+</style>
+</head>
+	<body background="css/header.jpg">
+	<div   id="rus" class="show" >
+<div id="child">
+
+	<form action="reg.php"  method="post">
+	<p align="center">
+	<font color="gold" face="Calibri" style="font-size: 1.4em;">*Для вашего же удобства советуем использовать только латинские буквы и цифры.</font>
+	
+	<br>
+	
+	<font color="gold" face="Calibri" style="font-size: 1.4em;">Придумайте себе логин:</font>
+	<br>
+	<input type="text" name="username" pattern = "[A-Za-z0-9]{4,32}" required>
+	<br>
+
+
+	<font color="gold" face="Calibri" style="font-size: 1.4em;">Для сохранности ваших данных придумайте пароль:</font>
+	<br>
+	<input type="password" name="password" pattern = "[A-Za-z0-9]{4,32}" required>
+	<br>
+	<br>
+	<br>
+	
+	<input style="background: #7CFC00 ;" type="submit" name="submit" value="Регистрация">
+</p>
+	</form>
+	</div>
+	</div>
+	<div   id="engl" class="hide" >
+	<div id="child">
+	<form action="reg.php"  method="post">
+	<p align="center">
+	<font color="gold" face="Calibri" style="font-size: 1.4em;">*For your own convenience, we recommend using only Latin letters and numbers.</font>
+	
+	<br>
+	
+	<font color="gold" face="Calibri" style="font-size: 1.4em;">Come up with a login:</font>
+	<br>
+	<input type="text" name="username" pattern = "[A-Za-z0-9]{4,32}" required>
+	<br>
+
+
+	<font color="gold" face="Calibri" style="font-size: 1.4em;">For the safety of your data, create a password:</font>
+	<br>
+	<input type="password" name="password" pattern = "[A-Za-z0-9]{4,32}" required>
+	<br>
+	<br>
+	<br>
+	
+	<input style="background: #7CFC00 ;" type="submit" name="submit" value="Register">
+</p>
+	</form>
+	</div>
+	</div>
+	<div id="enim" class="show">
+	<img src="Images/en.jpg"  align="left" width="43" height="41"  vspace="7"  onclick="get()">
+	</div>
+	<div id="ruim" class="hide">
+	<img src="Images/rus.jpg"  align="left" width="43" height="41"  vspace="7"  onclick="get1()">
+	</div>
+	</body>
+</html>
